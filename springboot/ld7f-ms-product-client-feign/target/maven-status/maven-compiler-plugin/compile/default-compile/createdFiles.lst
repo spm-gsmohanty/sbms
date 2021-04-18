@@ -1,0 +1,4 @@
+com\domain\Config.class
+com\domain\Product.class
+com\domain\Ld7cMsProductClientApplication.class
+com\domain\ProductController.class
