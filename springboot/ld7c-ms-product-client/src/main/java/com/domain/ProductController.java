@@ -18,7 +18,7 @@ public class ProductController {
 	@GetMapping("/products")
 	public Product[] getAllProducts() {
 		//Fetch data from the RESTful service
-		String url = "http://localhost:8071/rest/products";
+		String url = "http://localhost:7070/rest/products";
 		ResponseEntity<Product[]> responseEntity = restTemplate.getForEntity(url, Product[].class);
 		Product[] products = responseEntity.getBody();
 		return products;

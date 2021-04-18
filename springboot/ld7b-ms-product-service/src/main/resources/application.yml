@@ -1,10 +1,15 @@
 spring:
   application:
-    name: products-service
-    
-server:  port: 8071
-  
-eureka:  client:    register-with-eureka: true
+    name: product-service
+
+server:
+  port: 7070
+# additional ports 7071 6071
+eureka:
+  client:
+    register-with-eureka: true
     fetch-registry: true
-    service-url: 
-      defaultZone: http://localhost:8070/eureka/  instance:    hostname: localhost    
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
