@@ -13,7 +13,7 @@
 	<artifactId>ld7g-ms-product-client-feign-ribbon-eureka</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>ld7g-ms-product-client-feign-ribbon-eureka</name>
-	<description>A microservice which consumes products</description>
+	<description>Using Feign with Eureka</description>
 	<properties>
 		<java.version>1.8</java.version>
 		<spring-cloud-services.version>2.1.7.RELEASE
@@ -37,7 +37,10 @@
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
-
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
